@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Custom CSS for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <!-- Navbar with icons -->
+                <ul class="navbar">
+                    <li><a href="dashboard.html"><i class="fas fa-solid fa-check"></i> dashboard</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#menu"><i class="fas fa-utensils"></i> Menu</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li><a href="register.html"><i class="fas fa-user-plus"></i> Register</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <!-- Enhanced carousel with transitions and indicators -->
+            <section id="carousel">
+                <button class="carousel-control prev" onclick="prevSlide()">&#8249;</button>
+                <div id="carousel-container" class="carousel-container">
+                    <div class="carousel-item">Welcome to Chuncheon Dakgalbi</div>
+                    <div class="carousel-item">Delicious Korean Food</div>
+                    <div class="carousel-item">Enjoy the Best Dakgalbi</div>
+                </div>
+                <button class="carousel-control next" onclick="nextSlide()">&#8250;</button>
+            </section>
+
+            <!-- Content sections with improved layout -->
+
+            <section id="menu">
+                <h2>Our Menu</h2>
+                <p>Explore our variety of Korean dishes including Dakgalbi, Bibimbap, and more.</p>
+                
+                <!-- Menu Grid -->
+                <div class="menu-grid">
+                    <!-- Menu Item -->
+                    <div class="menu-item">
+                        <img src="assets/Cheese Dakdalbi.jpg" alt="Chuncheon Dakgalbi" />
+                        <h3>Dakgalbi</h3>
+                        <p>Spicy stir-fried chicken with vegetables and gochujang sauce.</p>
+                        <span class="price">$12.99</span>
+                    </div>
+            
+                    <!-- Menu Item -->
+                    <div class="menu-item">
+                        <img src="assets/bbbap.jpg" alt="Chuncheon Dakgalbi" />
+                        <h3>Bibimbap</h3>
+                        <p>Rice topped with assorted vegetables, egg, and spicy sauce.</p>
+                        <span class="price">$9.99</span>
+                    </div>
+            
+                    <!-- Menu Item -->
+                    <div class="menu-item">
+                        <img src="assets/Japchae.jpg" alt="Chuncheon Dakgalbi" />
+                        <h3>Japchae</h3>
+                        <p>Stir-fried glass noodles with vegetables and beef.</p>
+                        <span class="price">$10.99</span>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="menu-item">
+                        <img src="assets/Toppoki.jpg" alt="Chuncheon Dakgalbi" />
+                        <h3>Toppoki</h3>
+                        <p>Hot and Spicy rice cake.</p>
+                        <span class="price">$8.50</span>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="menu-item">
+                        <img src="assets/Fried Chicken.jpg" alt="Chuncheon Dakgalbi" />
+                        <h3>Fried Chicken</h3>
+                        <p>Chiken with assorted vegetables, egg, and spicy sauce.</p>
+                        <span class="price">$11.00</span>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="menu-item">
+                        <img src="assets/Kimbap.jpg" alt="Chuncheon Dakgalbi" />
+                        <h3>Kimbap</h3>
+                        <p>Rice topped with assorted vegetables, egg, and spicy sauce.</p>
+                        <span class="price">$8.00</span>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="menu-item">
+                        <img src="assets/Odeng.jpg" alt="Chuncheon Dakgalbi" />
+                        <h3>Odeng</h3>
+                        <p>fish cakes with fresh sauce and broth.</p>
+                        <span class="price">$9.00</span>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="menu-item">
+                        <img src="assets/Ramen.jpg" alt="Chuncheon Dakgalbi" />
+                        <h3>Ramen</h3>
+                        <p>a combination of noodles with spicy sauce and egg topping.</p>
+                        <span class="price">$12.50</span>
+                    </div>
+
+                    <!-- Menu Item -->
+                    <div class="menu-item">
+                        <img src="assets/Spicy Garlic Seafood Noodles.jpg" alt="Chuncheon Dakgalbi" />
+                        <h3>Spicy Garlic</h3>
+                        <p>Noodle topped with assorted shrimp, squid , egg, and spicy sauce.</p>
+                        <span class="price">$15.00</span>
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            
+            <section id="about" class="about-section">
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <p>
+                        Chuncheon Dakgalbi is a renowned Korean dish made with chicken, vegetables,
+                        and a delicious spicy sauce. We bring you the best of Korean flavors with authentic
+                        recipes. Our restaurant offers a warm and friendly atmosphere, perfect for
+                        family gatherings and social events.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- Bagian HTML untuk bagian contak -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <!-- Konten kontak dengan ikon dan penataan yang lebih baik -->
+    <div class="contact-content">
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Email: ChuncheonDakgalbi@google.com</p>
+            <p><i class="fas fa-phone"></i> Phone: +62 123 456 7890</p>
+            <p><i class="fas fa-map-marker-alt"></i> Address: Jl. Malioboro No.10, Yogyakarta, Indonesia</p>
+        </div>
+        <div class="contact-form">
+            <!-- Formulir kontak sederhana -->
+            <h3>Send Us a Message</h3>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+        </main>
+
+        <footer>
+            <p>&copy; Chuncheon Dakgalbi. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Include JavaScript for carousel functionality -->
+    <script src="script.js"></script>
+</body>
+
+<!-- Tambahkan PopUp Box -->
+<div id="popup" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Konfirmasi</h2>
+      <p>Apakah Anda yakin ingin mengirim pesan ini?</p>
+      <button onclick="confirmSend()">Ya</button>
+      <button onclick="closePopup()">Tidak</button>
+    </div>
+  </div>
+  
+  <script>
+  function showPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+  
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+  
+  function confirmSend() {
+    closePopup();
+    alert("Pesan telah dikirim.");
+    document.getElementById("contact-form").reset();
+  }
+  </script>
+  
+  <style>
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  </style>
+  
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Mencegah pengiriman default
+      showPopup(); // Menampilkan PopUp untuk konfirmasi
+    });
+    </script>
+    
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+          event.preventDefault();
+          const name = document.querySelector("input[name='name']").value;
+          localStorage.setItem("lastUserName", name);
+          showPopup();
+        });
+        
+        // Memuat data dari Local Storage saat halaman dimuat
+        window.addEventListener("load", function() {
+          const lastUserName = localStorage.getItem("lastUserName");
+          if (lastUserName) {
+            document.querySelector("input[name='name']").value = lastUserName;
+          }
+        });
+        </script>
+        
+        <script>
+            async function sendContactData(data) {
+              try {
+                const response = await fetch("https://example.com/contact", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(data),
+                });
+            
+                if (response.ok) {
+                  alert("Pesan telah dikirim.");
+                } else {
+                  alert("Terjadi kesalahan saat mengirim pesan.");
+                }
+              } catch (error) {
+                alert("Terjadi kesalahan: " + error.message);
+              }
+            }
+            
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+              event.preventDefault();
+              const data = {
+                name: document.querySelector("input[name='name']").value,
+                email: document.querySelector("input[name='email']").value,
+                message: document.querySelector("textarea[name='message']").value,
+              };
+            
+              showPopup(); // Meminta konfirmasi sebelum mengirim data
+            });
+            
+            // Memastikan data dikirim setelah konfirmasi
+            function confirmSend() {
+              closePopup();
+              const data = {
+                name: document.querySelector("input[name='name']").value,
+                email: document.querySelector("input[name='email']").value,
+                message: document.querySelector("textarea[name='message']").value,
+              };
+              sendContactData(data); // Mengirim data dengan Fetch
+            }
+            </script>
+
+        <!-- Tambahkan Pop-Up Box -->
+        <div id="popup" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Konfirmasi</h2>
+            <p>Apakah Anda yakin ingin mengirim pesan ini?</p>
+            <button onclick="confirmSend()">Ya</button>
+            <button onclick="closePopup()">Tidak</button>
+          </div>
+        </div>
+
+<!-- CSS untuk Pop-Up Box -->
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+</style>
+
+<!-- JavaScript untuk Event Formulir Kontak -->
+<script>
+function showPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+function confirmSend() {
+  closePopup();
+  const data = {
+      name: document.querySelector("input[name='name']").value,
+      email: document.querySelector("input[name='email']").value,
+      message: document.querySelector("textarea[name='message']").value,
+  };
+  
+  sendContactData(data); // Mengirim data dengan Fetch
+}
+
+async function sendContactData(data) {
+  try {
+      const response = await fetch("https://example.com/contact", {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+      });
+      
+      if (response.ok) {
+          alert("Pesan telah dikirim.");
+      } else {
+          alert("Terjadi kesalahan saat mengirim pesan.");
+      }
+  } catch (error) {
+      alert("Terjadi kesalahan: " + error.message);
+  }
+}
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Mencegah pengiriman default
+  showPopup(); // Menampilkan Pop-Up untuk konfirmasi
+});
+
+window.addEventListener("load", function() {
+  const lastUserName = localStorage.getItem("lastUserName");
+  if (lastUserName) {
+      document.querySelector("input[name='name']").value = lastUserName;
+  }
+});
+
+document.querySelector("input[name='name']").addEventListener("change", function() {
+  localStorage.setItem("lastUserName", this.value);
+});
+
+</script>
+
+<script src="script.js"></script> <!-- JavaScript untuk carousel dan lainnya -->
+</body>
+
+</html>

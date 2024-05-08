@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+        <link rel="icon" href="assets/icon.png" />
+        <link rel="stylesheet" href="css/ln.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@500;700&display=swap"
+                  rel="stylesheet"
+              />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Dashboard</h1>
+
+        <!-- Customer list section -->
+        <section class="customer-section">
+            <h2>Customers</h2>
+            <ul id="customers-list">
+                <li>Afrida  <button class="delete-btn" onclick="deleteCustomer(this)">Delete</button></li>
+                <li>Aurelia <button class="delete-btn" onclick="deleteCustomer(this)">Delete</button></li>
+                <li>Arga <button class="delete-btn" onclick="deleteCustomer(this)">Delete</button></li>
+            </ul>
+        </section>
+
+        <!-- Add customer section -->
+        <section class="add-customer-section">
+            <h2>Add Customer</h2>
+            <form id="add-customer-form">
+                <input type="text" id="customer-name" name="customer-name" placeholder="Enter customer name" required>
+                <button type="submit" class="add-btn">Add Customer</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- JavaScript for interactive elements -->
+    <script>
+        const customerForm = document.getElementById('add-customer-form');
+        const customerList = document.getElementById('customers-list');
+
+        customerForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent form from refreshing page
+            const name = document.getElementById('customer-name').value;
+
+            if (name.trim() === '') {
+                alert("Name cannot be empty!"); // Validate empty input
+                return;
+            }
+
+            const listItem = document.createElement('li'); // Create new list item
+            listItem.textContent = `${name} `;
+
+            const deleteButton = document.createElement('button'); // Add delete button
+            deleteButton.textContent = 'Delete';
+            deleteButton.className = 'delete-btn'; 
+            deleteButton.onclick = () => {
+                listItem.remove(); 
+            };
+
+            listItem.appendChild(deleteButton); 
+            customerList.appendChild(listItem); 
+            customerForm.reset(); 
+        });
+
+        function deleteCustomer(button) {
+            button.parentNode.remove(); 
+        }
+    </script>
+</body>
+</html>
